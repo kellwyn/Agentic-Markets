@@ -216,3 +216,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# --- LLM Wiki additions ---
+
+# Obsidian: track plugins and settings, ignore per-machine workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# OneDrive conflict files
+*.conflict.*
+*-conflict.*
+
+# Large binaries in raw/ — track text sources, ignore PDFs/data dumps (use Git LFS if needed)
+raw/papers/*.pdf
+raw/data/*.csv
+raw/data/*.parquet
+raw/data/*.feather
+raw/data/*.h5
+
+# Editor scratch
+*.swp
+*.swo
+*~
